@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Форма отправки email уведомлений</h2>
+
+<form action="~/Notification/SentEmail" method="post">
+    <div class="row">
+        <div class="col-md-6"> <p style="font-size:16px">Тема</p></div>
+        <div class="col-md-6">
+            <input type="text" name="Title" id="Title" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-6"> <p style="font-size:16px">Кому</p></div>
+        <div class="col-md-6">
+            <input type="text" name="To" id="To" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row">
+        <div class="col-md-6"> <p style="font-size:16px">Сообщение</p></div>
+        <div class="col-md-6">
+            <textarea rows="10"
+                      cols="100"
+                      type="text" name="Body" id="Body"></textarea>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <input type="submit" />
+</form>
+

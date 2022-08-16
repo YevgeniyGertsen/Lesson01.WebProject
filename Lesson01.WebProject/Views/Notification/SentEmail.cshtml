@@ -1,0 +1,14 @@
+﻿@using Lesson01.WebProject.Models
+@{
+    ViewBag.Title = "SentEmail";
+    ResultSendingEmail result = ViewBag.ResultSending;
+}
+
+<p>
+    Результаты отправки сообщения:
+    <span style="@if (result.Result) {<text> color: green </text>}
+                               else  {<text> color: red </text>}">
+        @result.Message
+    </span>
+</p>
+
